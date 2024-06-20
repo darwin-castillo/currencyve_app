@@ -52,6 +52,6 @@ class HomeProvider with ChangeNotifier {
 
   void calcValue() {
     value = (moneyMasked.numberValue) / (currency.value ?? 1);
-    formattedAmount = currencyFormat.format(value);
+    formattedAmount = "${currencyFormat.format(value)}";;
   }
 }
